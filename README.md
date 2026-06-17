@@ -1,16 +1,64 @@
-# React + Vite
+# 🎟️ Lottery Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Lottery Game built with React and Vite. The application generates a random lottery ticket and checks whether the ticket satisfies a winning condition.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Generate a random lottery ticket
+* Buy a new ticket with a single click
+* Customizable winning condition
+* Built using React Hooks (`useState`)
+* Fast development setup with Vite
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```text
+src/
+├── App.jsx
+├── Lottery.jsx
+├── Ticket.jsx
+├── helper.js
+├── Lottery.css
+└── main.jsx
+```
 
-## Expanding the ESLint configuration
+## How It Works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. A ticket containing random numbers is generated using the `generateNum()` function.
+2. The ticket is displayed through the `Ticket` component.
+3. A winning condition is passed as a prop to the `Lottery` component.
+4. If the ticket satisfies the winning condition, a congratulatory message is displayed.
+5. Clicking **New Ticket** generates a new random ticket.
+
+
+## Technologies Used
+
+* React
+* JavaScript (ES6+)
+* Vite
+* CSS
+
+## Learning Objectives
+
+This project demonstrates:
+
+* React Functional Components
+* Props
+* State Management with `useState`
+* Event Handling
+* Conditional Rendering
+* Component Reusability
+
+## Future Enhancements
+
+* Multiple winning rules
+* Score tracking
+* Ticket history
+* Better UI and animations
+* Difficulty levels
+
+## Author
+
+Mahi Verma
+
+Built as a React learning project.
